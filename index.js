@@ -46,6 +46,7 @@ connectDB();
 const app = express();
 
 app.use(express.json());
+<<<<<<< HEAD
 
 // Enhanced CORS configuration
 const allowedOrigins = [
@@ -57,6 +58,11 @@ app.use(cors({
   origin: function (origin, callback) {
     // Allow requests with no origin (like mobile apps or curl requests)
     if (!origin) return callback(null, true);
+=======
+app.use(
+  cors({
+    origin: "https://userfrontend-psi.vercel.app",
+>>>>>>> 8760e5a201c8520e972b939660574e749c540c48
     
     // Remove trailing slash for comparison
     const normalizedOrigin = origin.endsWith('/') ? origin.slice(0, -1) : origin;
