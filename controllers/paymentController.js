@@ -10,8 +10,8 @@ const MERCHANT_BASE_URL = "https://api-preprod.phonepe.com/apis/pg-sandbox/pg/v1
 const MERCHANT_STATUS_URL = "https://api-preprod.phonepe.com/apis/pg-sandbox/pg/v1/status";
 
 const redirectUrl = "https://userbackend-1.onrender.com/api/payment/status";
-const successUrl = "https://userfrontend-psi.vercel.app//dashboard";
-const failureUrl = "https://userfrontend-psi.vercel.app//dashboard";
+const successUrl = "https://userfrontend-psi.vercel.app/dashboard";
+const failureUrl = "https://userfrontend-psi.vercel.app/dashboard";
 
 const createOrder = async (req, res) => {
     try {
