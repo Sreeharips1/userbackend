@@ -21,7 +21,7 @@ app.use(morgan('dev'));
 
 // CORS Configuration
 const allowedOrigins = [
-  'https://userfrontend-tpqx.vercel.app',
+  'https://userfrontend-psi.vercel.app',
   'http://localhost:3000'
 ];
 
