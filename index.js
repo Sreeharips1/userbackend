@@ -7,6 +7,8 @@ const authRoutes = require('./routes/authRoutes');
 const trainerRoutes = require('./routes/trainerRoutes');
 const paymentRoutes = require('./routes/paymentRoutes');
 const adminRoutes = require('./routes/adminRoutes');
+const attendanceRoutes = require("./routes/attendanceRoutes");
+const membershipRoutes =require("./routes/membershipRoutes");
 
 dotenv.config();
 connectDB();
@@ -44,6 +46,8 @@ app.use('/api/auth', authRoutes);
 app.use('/api/admin', trainerRoutes);
 app.use('/api/payment', paymentRoutes);
 app.use('/api/admin', adminRoutes);
+app.use("/api/attendance", attendanceRoutes);
+app.use("/api/membership",membershipRoutes);
 
 // Health Check
 app.get('/health', (req, res) => {
