@@ -4,7 +4,7 @@ const { addTrainer, getTrainers, getTrainerById, editTrainer, deleteTrainer } = 
 
 router.post('/trainers/add-trainer', addTrainer);
 router.get('/trainers', getTrainers);
-router.get('/trainers/:trainerID', getTrainerById); 
+router.get('/trainers/:membershipID', getTrainerById); 
 router.put('/trainers/edit/:trainerID', editTrainer); 
 router.delete('/trainers/delete/:trainerID', deleteTrainer);
 
