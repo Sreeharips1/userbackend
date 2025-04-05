@@ -39,7 +39,7 @@ app.use(cors({
     }
     
     // Allow the PhonePe redirect (check if it's the status endpoint)
-    if (normalizedOrigin.includes('userbackend-1.onrender.com') {
+    if (normalizedOrigin.includes('userbackend-1.onrender.com')) {
       return callback(null, true);
     }
     
