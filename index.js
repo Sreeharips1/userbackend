@@ -22,7 +22,8 @@ app.use(morgan('dev'));
 // CORS Configuration
 const allowedOrigins = [
   'https://userfrontend-psi.vercel.app',
-  'http://localhost:3000'
+  'http://localhost:3000',
+  'https://userbackend-1.onrender.com'
 ];
 
 app.use(cors({
