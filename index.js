@@ -23,7 +23,8 @@ app.use(morgan('dev'));
 const allowedOrigins = [
   'https://userfrontend-psi.vercel.app',
   'http://localhost:3000',
-  'https://userbackend-1.onrender.com' // Add your backend URL to allowed origins
+  'https://userbackend-1.onrender.com',// Add your backend URL to allowed origins
+  'https://mercury-uat.phonepe.com'
 ];
 
 app.use(cors({
